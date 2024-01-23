@@ -8,7 +8,7 @@ resource "helm_release" "istio_base" {
   chart            = "base"
   namespace        = "istio-system"
   create_namespace = true
-  version          = "1.20.1"
+  version          = "1.17.1"
 
   set {
     name  = "global.istioNamespace"
